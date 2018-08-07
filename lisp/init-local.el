@@ -7,7 +7,6 @@
 (add-hook 'prog-mode-hook 'nlinum-mode)
 
 (require-package 'protobuf-mode)
-
 (maybe-require-package 'alchemist)
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
