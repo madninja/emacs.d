@@ -18,6 +18,10 @@
   )
 
 (when *is-a-mac*
+  (require-package 'xclip)
+  )
+
+(when *is-a-mac*
   (add-hook 'markdown-mode-hook
             (lambda ()
               (let ((map markdown-mode-command-map))
