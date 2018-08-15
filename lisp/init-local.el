@@ -1,5 +1,8 @@
 (setq debug-on-error nil)
 
+(projectile-mode +1)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+
 (require-package 'nlinum)
 (add-hook 'prog-mode-hook 'nlinum-mode)
 
