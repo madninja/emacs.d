@@ -7,6 +7,11 @@
 (add-hook 'prog-mode-hook 'nlinum-mode)
 
 (require-package 'protobuf-mode)
+(add-hook 'irony-mode-hook
+          (lambda ()
+            (push 'protobuf-mode irony-supported-major-modes)
+            )
+          )
 (maybe-require-package 'alchemist)
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
