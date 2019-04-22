@@ -57,7 +57,7 @@
 ;;     source $HOME/.keychain/$HOSTNAME-sh
 ;; fi
 ;;
-(maybe-require-package 'keychain)
+(maybe-require-package 'keychain-environment)
 (keychain-refresh-environment)
 
 
