@@ -89,4 +89,7 @@
 (keychain-refresh-environment)
 
 
+(setq projectile-switch-project-action
+      #'projectile-commander)
+
 (provide 'init-local)
